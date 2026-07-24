@@ -15,7 +15,7 @@
 ## Phases
 
 ### Phase 1: Deployment Pipeline & Server Infrastructure
-**Status**: ⬜ Not Started
+**Status**: ✅ Complete
 **Objective**: Establish the zero-Docker build-to-server deployment pipeline so every subsequent phase can be verified on a real server.
 
 **Deliverables:**
