@@ -1,0 +1,15 @@
+{
+  "name": "daily-identity-v36",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "audit:simulators": "node scripts/audit-simulator-controls.mjs",
+    "audit:live-coverage": "node scripts/audit-live-coverage.mjs",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "dev:user": "pnpm --filter @daily/user-web dev",
+    "dev:admin": "pnpm --filter @daily/admin-web dev",
+    "dev:api": "pnpm --filter @daily/api dev"
+  },
+  "devDependencies": { "typescript": "^5.7.3" }
+}

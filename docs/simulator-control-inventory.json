@@ -1,0 +1,3031 @@
+{
+  "generatedAt": "2026-07-24T14:30:30.973Z",
+  "simulators": {
+    "user": {
+      "file": "Daily_User_Marketer_Simulator_V3_6.html",
+      "totals": {
+        "controls": 208,
+        "buttons": 157,
+        "inputs": 29,
+        "selects": 11,
+        "textareas": 3,
+        "inlineActions": 153
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": "walletBtn",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Connect MetaMask",
+          "sourceOffset": 14780
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "home",
+          "dataPane": "",
+          "action": "",
+          "label": "Home",
+          "sourceOffset": 14889
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "names",
+          "dataPane": "",
+          "action": "",
+          "label": "Daily Names",
+          "sourceOffset": 14942
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "myNames",
+          "dataPane": "",
+          "action": "",
+          "label": "My Names",
+          "sourceOffset": 14988
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "mail",
+          "dataPane": "",
+          "action": "",
+          "label": "Daily Mail",
+          "sourceOffset": 15033
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "attention",
+          "dataPane": "",
+          "action": "",
+          "label": "Paid Attention",
+          "sourceOffset": 15077
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "marketer",
+          "dataPane": "",
+          "action": "",
+          "label": "Marketer Studio",
+          "sourceOffset": 15130
+        },
+        {
+          "tag": "button",
+          "id": "continueRegistration",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Continue",
+          "sourceOffset": 17115
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showNameScreen('nameSearchScreen')",
+          "label": "Back to search",
+          "sourceOffset": 18358
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "submitPremium()",
+          "label": "Submit request",
+          "sourceOffset": 19060
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showView('names')",
+          "label": "Register another name",
+          "sourceOffset": 19644
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeNameManager()",
+          "label": "Back to My Names",
+          "sourceOffset": 20731
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Address records saved')",
+          "label": "Save addresses",
+          "sourceOffset": 22502
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Profile records saved')",
+          "label": "Save profile",
+          "sourceOffset": 23037
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Contenthash record saved')",
+          "label": "Save contenthash",
+          "sourceOffset": 23492
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Mail key record updated')",
+          "label": "Publish update",
+          "sourceOffset": 23940
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('New local mail key generated')",
+          "label": "Rotate key",
+          "sourceOffset": 24031
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "createSubname()",
+          "label": "Create subname",
+          "sourceOffset": 24372
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Manage",
+          "sourceOffset": 24570
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Renewal payment confirmed')",
+          "label": "Pay and renew",
+          "sourceOffset": 24968
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Transfer validation simulated')",
+          "label": "Transfer name",
+          "sourceOffset": 25365
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showView('attention')",
+          "label": "Rewards",
+          "sourceOffset": 27504
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showView('attention')",
+          "label": "Opt in settings",
+          "sourceOffset": 27569
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "restartOptin()",
+          "label": "Edit preferences",
+          "sourceOffset": 28803
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "startCampaign()",
+          "label": "Create campaign",
+          "sourceOffset": 29964
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toggleCoach()",
+          "label": "−",
+          "sourceOffset": 31457
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "connectWallet(${i})",
+          "label": "${w.name} ${w.address}",
+          "sourceOffset": 34396
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 34600
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openPremium('${full}')",
+          "label": "Request quote",
+          "sourceOffset": 36209
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmCommit()",
+          "label": "Confirm in MetaMask",
+          "sourceOffset": 39749
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmReveal()",
+          "label": "Confirm reveal and payment",
+          "sourceOffset": 40797
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "simulatePremiumQuote('${name}')",
+          "label": "Simulate quote received",
+          "sourceOffset": 43404
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "acceptPremiumQuote('${name}',500)",
+          "label": "Accept and register",
+          "sourceOffset": 44042
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Manage",
+          "sourceOffset": 45913
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 46293
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "radio",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 46350
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Local mailbox key generated')",
+          "label": "Generate key now",
+          "sourceOffset": 46524
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Encrypted backup downloaded')",
+          "label": "Download backup",
+          "sourceOffset": 46800
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "readMessage('${type}',${i})",
+          "label": "${m.from} ${m.subject} ${m.meta}",
+          "sourceOffset": 49159
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Signed acknowledgement created')",
+          "label": "Acknowledge",
+          "sourceOffset": 49893
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Verified link receipt recorded')",
+          "label": "Open link",
+          "sourceOffset": 49990
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Reply reward receipt recorded')",
+          "label": "Reply",
+          "sourceOffset": 50084
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Campaign reported to admin')",
+          "label": "Report",
+          "sourceOffset": 50173
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openCompose()",
+          "label": "Reply",
+          "sourceOffset": 50261
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Forward flow opened')",
+          "label": "Forward",
+          "sourceOffset": 50326
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Message archived')",
+          "label": "Archive",
+          "sourceOffset": 50407
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Sender blocked')",
+          "label": "Block",
+          "sourceOffset": 50485
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50644
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50695
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50817
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "This is a full Daily Mail compose simulation.",
+          "sourceOffset": 50875
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "file",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50966
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 51122
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "sendMail()",
+          "label": "Encrypt and send",
+          "sourceOffset": 51186
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 53461
+        },
+        {
+          "tag": "input",
+          "id": "consentCheck",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 54047
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Consent signature requested in MetaMask')",
+          "label": "Preview signature request",
+          "sourceOffset": 54142
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "depositCampaign()",
+          "label": "Confirm DLY deposit",
+          "sourceOffset": 62734
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Most recent Oldest first",
+          "sourceOffset": 77793
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Signed acknowledgement created')",
+          "label": "Acknowledge",
+          "sourceOffset": 79279
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Verified click receipt recorded')",
+          "label": "Open link",
+          "sourceOffset": 79376
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Reply reward receipt recorded')",
+          "label": "Reply",
+          "sourceOffset": 79509
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Campaign reported for moderation')",
+          "label": "Report",
+          "sourceOffset": 79598
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openCompose()",
+          "label": "Reply",
+          "sourceOffset": 79692
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Forward flow opened')",
+          "label": "Forward",
+          "sourceOffset": 79757
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Message archived')",
+          "label": "Archive",
+          "sourceOffset": 79838
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Sender blocked')",
+          "label": "Block",
+          "sourceOffset": 79916
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "addGeoV31('${k}')",
+          "label": "${v.name} ${v.eligible.toLocaleString()} opted in users · ${v.price} DLY per user",
+          "sourceOffset": 81407
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "depositCampaign()",
+          "label": "Deposit ${c.totalDeposit.toLocaleString()} DLY",
+          "sourceOffset": 92541
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showNameScreen('nameSearchScreen')",
+          "label": "Back to search",
+          "sourceOffset": 109609
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "submitPremium()",
+          "label": "Submit request without payment",
+          "sourceOffset": 110608
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "acceptQuoteV32('${q.name}',${q.quote})",
+          "label": "Accept and pay",
+          "sourceOffset": 113049
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Domain now points to the dApp content record')",
+          "label": "Save dApp pointer",
+          "sourceOffset": 115145
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "createSubnameV32()",
+          "label": "Create subname",
+          "sourceOffset": 115817
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Manage",
+          "sourceOffset": 116018
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Manage",
+          "sourceOffset": 116356
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Renewal payment confirmed')",
+          "label": "Pay and renew",
+          "sourceOffset": 116984
+        },
+        {
+          "tag": "input",
+          "id": "transferUnderstandV32",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 117596
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "transferNameV32()",
+          "label": "Review transfer",
+          "sourceOffset": 117741
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 118383
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Transfer transaction simulated')",
+          "label": "Confirm transfer",
+          "sourceOffset": 118447
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Local keys generated for all selected mailboxes')",
+          "label": "Generate all keys",
+          "sourceOffset": 121120
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Encrypted multi-mailbox backup downloaded')",
+          "label": "Download backup",
+          "sourceOffset": 121488
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "switchMailboxV32('${n}')",
+          "label": "${n}",
+          "sourceOffset": 123202
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Most recent Oldest first",
+          "sourceOffset": 126677
+        },
+        {
+          "tag": "div",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "readMessageV32('${type}',${(type==='marketingInbox'?marketingMessagesV31:personalMessagesV31).indexOf(m)})",
+          "label": "${m.from}",
+          "sourceOffset": 126905
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openCompose()",
+          "label": "Reply",
+          "sourceOffset": 127745
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Forward opened')",
+          "label": "Forward",
+          "sourceOffset": 127810
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Message archived')",
+          "label": "Archive",
+          "sourceOffset": 127886
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Sender blocked')",
+          "label": "Block",
+          "sourceOffset": 127964
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "recordMarketingActionV32('${m.id}','click',${rewards.click})",
+          "label": "Open image link",
+          "sourceOffset": 128309
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "recordMarketingActionV32('${m.id}','click',${rewards.click})",
+          "label": "Open second link",
+          "sourceOffset": 128482
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "recordMarketingActionV32('${m.id}','reply',${rewards.reply})",
+          "label": "Reply and earn ${rewards.reply} DLY",
+          "sourceOffset": 129503
+        },
+        {
+          "tag": "button",
+          "id": "claim-${m.id}",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "claimMarketingRewardV32('${m.id}')",
+          "label": "Claim after deadline",
+          "sourceOffset": 129645
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "fastForwardRewardV32('${m.id}')",
+          "label": "Demo: fast forward deadline",
+          "sourceOffset": 129772
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Campaign complaint sent to admin')",
+          "label": "Report",
+          "sourceOffset": 129876
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "${(state.mailboxesV32.length?state.mailboxesV32:[from]).map(n=>` ${n} `).join('')}",
+          "sourceOffset": 131686
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 131843
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 131889
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "This is a complete encrypted message simulation.",
+          "sourceOffset": 131947
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "file",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 132051
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 132174
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "sendMail()",
+          "label": "Encrypt and send",
+          "sourceOffset": 132238
+        },
+        {
+          "tag": "input",
+          "id": "consentCheck",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 134509
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "requestCountryChangeV32()",
+          "label": "Request country change",
+          "sourceOffset": 137471
+        },
+        {
+          "tag": "select",
+          "id": "requestedCountryV32",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "India UAE United States Bangladesh",
+          "sourceOffset": 138604
+        },
+        {
+          "tag": "textarea",
+          "id": "countryReasonV32",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "I have permanently moved.",
+          "sourceOffset": 138766
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 138975
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "submitCountryRequestV32()",
+          "label": "Submit request",
+          "sourceOffset": 139039
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "All states/regions ${Object.keys(g.regions).map(r=>` ${r} `).join('')}",
+          "sourceOffset": 142504
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "All cities ${Object.keys(g.regions[selected.region].cities).map(c=>` ${c} `).join('')}",
+          "sourceOffset": 142733
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "depositCampaignV32()",
+          "label": "Deposit ${t.total.toLocaleString()} DLY",
+          "sourceOffset": 150574
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "submitCountryChangeV33()",
+          "label": "Submit request",
+          "sourceOffset": 166231
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Encrypted backup password updated locally')",
+          "label": "Change backup password",
+          "sourceOffset": 166788
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openMailboxManagerV33()",
+          "label": "Manage mailboxes",
+          "sourceOffset": 167970
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 171734
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmDlyPaymentV33(${amount})",
+          "label": "Confirm in MetaMask",
+          "sourceOffset": 171798
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openNameManager('${n}')",
+          "label": "Manage",
+          "sourceOffset": 173266
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openMailboxManagerV33()",
+          "label": "Create mailbox",
+          "sourceOffset": 173342
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 174459
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 174902
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveMailboxManagerV33()",
+          "label": "Save mailboxes",
+          "sourceOffset": 174966
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "selectExpiringDomainsV33()",
+          "label": "Select expiring first",
+          "sourceOffset": 176791
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "${Array.from({length:10},(_,y)=>` ${y+1} year${y?'s':''} `).join('')}",
+          "sourceOffset": 177272
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "payRenewalsV33()",
+          "label": "Pay and renew selected domains",
+          "sourceOffset": 177779
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "manageSubnameV33(${i})",
+          "label": "Manage",
+          "sourceOffset": 179434
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 181024
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveSubnameV33(${i})",
+          "label": "Save changes",
+          "sourceOffset": 181088
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "All activity Domains Campaigns Rewards",
+          "sourceOffset": 181924
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 188920
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "depositCampaignV33()",
+          "label": "Deposit ${t.total.toLocaleString()} DLY",
+          "sourceOffset": 196619
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "restartCampaignV33(${i},false)",
+          "label": "Restart same",
+          "sourceOffset": 200932
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "restartCampaignV33(${i},true)",
+          "label": "Edit and restart",
+          "sourceOffset": 201021
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "linkWalletV34()",
+          "label": "Link wallet",
+          "sourceOffset": 209291
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "unlinkWalletV34(${i})",
+          "label": "Remove",
+          "sourceOffset": 209653
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Wallet activity CSV exported')",
+          "label": "Export CSV",
+          "sourceOffset": 210177
+        },
+        {
+          "tag": "input",
+          "id": "v34LinkLabel",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 212406
+        },
+        {
+          "tag": "input",
+          "id": "v34LinkAddress",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "0x...",
+          "sourceOffset": 212486
+        },
+        {
+          "tag": "input",
+          "id": "v34LinkConsent",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 212558
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 212678
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmLinkWalletV34()",
+          "label": "Request signature",
+          "sourceOffset": 212742
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 214324
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 214398
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 214435
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmWalletPaymentV34(${amount})",
+          "label": "Confirm in MetaMask",
+          "sourceOffset": 214499
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "simulatePremiumQuote('${name}')",
+          "label": "Simulate quote received",
+          "sourceOffset": 217823
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Additional coin-type record added')",
+          "label": "Add another wallet record",
+          "sourceOffset": 220382
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 221259
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Subdomain records saved')",
+          "label": "Save changes",
+          "sourceOffset": 221323
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showNameScreen('nameSearchScreen')",
+          "label": "Back to search",
+          "sourceOffset": 234720
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "submitPremiumV35()",
+          "label": "Submit request without payment",
+          "sourceOffset": 236205
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Quote accepted and MetaMask payment opened')",
+          "label": "Accept quote and pay",
+          "sourceOffset": 239013
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openDomainV35('${d.name}')",
+          "label": "Manage",
+          "sourceOffset": 240404
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "backDomainsV35()",
+          "label": "Back to My Domains",
+          "sourceOffset": 241160
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "state.v35.currentDomain='${x.name}';renderDomainManagerV35('wallet')",
+          "label": "Manage",
+          "sourceOffset": 242352
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveDomainWalletV35()",
+          "label": "Save wallet records",
+          "sourceOffset": 243068
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveDomainProfileV35()",
+          "label": "Save profile records",
+          "sourceOffset": 243729
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveContentV35()",
+          "label": "Save dApp pointer",
+          "sourceOffset": 244555
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "createSubnameV35()",
+          "label": "Create subdomain",
+          "sourceOffset": 245267
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "manageSubnameV35(${i})",
+          "label": "Manage",
+          "sourceOffset": 245598
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "paySingleRenewV35()",
+          "label": "Pay and renew",
+          "sourceOffset": 246394
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openBulkRenewV35()",
+          "label": "Renew multiple domains",
+          "sourceOffset": 246471
+        },
+        {
+          "tag": "input",
+          "id": "v35TransferConfirm",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 246918
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "reviewTransferV35()",
+          "label": "Review transfer",
+          "sourceOffset": 247067
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "All Domain fees Sent Received Marketing spent Marketing earned Refunds",
+          "sourceOffset": 247320
+        },
+        {
+          "tag": "select",
+          "id": "v35SubParent",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "${ownedOptionsV35(d.name)}",
+          "sourceOffset": 249067
+        },
+        {
+          "tag": "input",
+          "id": "v35SubLabel",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 249158
+        },
+        {
+          "tag": "input",
+          "id": "v35SubOwner",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 249221
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 249280
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveNewSubnameV35()",
+          "label": "Create",
+          "sourceOffset": 249344
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "revokeSubnameV35(${i})",
+          "label": "Revoke subdomain",
+          "sourceOffset": 251201
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 251316
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveSubnameV35(${i})",
+          "label": "Save changes",
+          "sourceOffset": 251380
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "${Array.from({length:10},(_,y)=>` ${y+1} year${y?'s':''} `).join('')}",
+          "sourceOffset": 253895
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 254367
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "payBulkRenewV35()",
+          "label": "Pay and renew selected",
+          "sourceOffset": 254431
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 256339
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Transfer transaction opened in MetaMask')",
+          "label": "Confirm transfer",
+          "sourceOffset": 256403
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 256813
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 257023
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveMailboxesV35()",
+          "label": "Save mailboxes",
+          "sourceOffset": 257087
+        },
+        {
+          "tag": "button",
+          "id": "v35MailboxBtn",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openMailboxManagerV35()",
+          "label": "Manage mailboxes",
+          "sourceOffset": 257605
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "linkWalletV35()",
+          "label": "Link wallet",
+          "sourceOffset": 259783
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Wallet CSV exported')",
+          "label": "Export CSV",
+          "sourceOffset": 260615
+        },
+        {
+          "tag": "input",
+          "id": "v35LinkLabel",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 262317
+        },
+        {
+          "tag": "input",
+          "id": "v35LinkAddress",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "0x...",
+          "sourceOffset": 262397
+        },
+        {
+          "tag": "input",
+          "id": "v35LinkAgree",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 262469
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 262544
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmLinkV35()",
+          "label": "Request signature",
+          "sourceOffset": 262608
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 263964
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 264039
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 264076
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmPayV35(${a})",
+          "label": "Confirm in MetaMask",
+          "sourceOffset": 264140
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "submitCountryV35()",
+          "label": "Submit request",
+          "sourceOffset": 265738
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Encrypted mailbox backup password changed locally')",
+          "label": "Change backup password",
+          "sourceOffset": 266089
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openMailboxManagerV35()",
+          "label": "Manage mailboxes",
+          "sourceOffset": 266350
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "startCampaignV35()",
+          "label": "Create campaign",
+          "sourceOffset": 270314
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "depositCampaignV35()",
+          "label": "Deposit ${t.total.toLocaleString()} DLY",
+          "sourceOffset": 281622
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "showView('settings')",
+          "label": "Open settings",
+          "sourceOffset": 292252
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openMarketingMessage(0)",
+          "label": "Open campaign messages",
+          "sourceOffset": 293147
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 295092
+        },
+        {
+          "tag": "button",
+          "id": "v36StorageButton",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "openStorageV36()",
+          "label": "Storage",
+          "sourceOffset": 296289
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "generateRequestV36()",
+          "label": "Generate payment request",
+          "sourceOffset": 299823
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "verifyFullRecipientV36()",
+          "label": "Verify full address",
+          "sourceOffset": 301096
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 301491
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 302226
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "confirmPayV36(${amount})",
+          "label": "Open MetaMask",
+          "sourceOffset": 302290
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "copyRequestV36()",
+          "label": "Copy payment link",
+          "sourceOffset": 303583
+        }
+      ]
+    },
+    "admin": {
+      "file": "Daily_Admin_Simulator_V3_6.html",
+      "totals": {
+        "controls": 92,
+        "buttons": 64,
+        "inputs": 14,
+        "selects": 4,
+        "textareas": 10,
+        "inlineActions": 64
+      },
+      "controls": [
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Authorized admin wallet connected')",
+          "label": "0xADM...721",
+          "sourceOffset": 8061
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "startTour()",
+          "label": "Start admin guide",
+          "sourceOffset": 8288
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('TLD pricing saved with effective date')",
+          "label": "Save pricing",
+          "sourceOffset": 11419
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "addCatalogRow()",
+          "label": "Add to catalog",
+          "sourceOffset": 12179
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Resolver gateway config saved')",
+          "label": "Save resolver settings",
+          "sourceOffset": 13956
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Gateway signer rotation proposed')",
+          "label": "Rotate signer",
+          "sourceOffset": 14061
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Mail controls saved')",
+          "label": "Save mail controls",
+          "sourceOffset": 15078
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "startAdminTransfer()",
+          "label": "Start transfer",
+          "sourceOffset": 17826
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Pending admin accepted role')",
+          "label": "Accept transfer",
+          "sourceOffset": 18158
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Admin transfer cancelled')",
+          "label": "Cancel transfer",
+          "sourceOffset": 18256
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toggleCoach()",
+          "label": "−",
+          "sourceOffset": 19449
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Country campaign audit CSV exported')",
+          "label": "Export audit report",
+          "sourceOffset": 29203
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "saveEconomyV31()",
+          "label": "Save policy",
+          "sourceOffset": 29508
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "addGeoPriceV31()",
+          "label": "Add pricing rule",
+          "sourceOffset": 32815
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "startAdminTransferV31()",
+          "label": "Start transfer",
+          "sourceOffset": 33697
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "acceptAdminV31()",
+          "label": "Accept admin role",
+          "sourceOffset": 34180
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "cancelAdminV31()",
+          "label": "Cancel transfer",
+          "sourceOffset": 34260
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 35325
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "savePolicyV32()",
+          "label": "Save reward policy",
+          "sourceOffset": 47320
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toggleAllRequestsV32(true)",
+          "label": "Select all",
+          "sourceOffset": 49857
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50021
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50238
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 50437
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Campaign audit CSV exported')",
+          "label": "Export campaign audit CSV",
+          "sourceOffset": 52455
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "2026 2027",
+          "sourceOffset": 56418
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('TLD pricing, bundle discounts and renewal policy saved')",
+          "label": "Save pricing",
+          "sourceOffset": 58852
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "addKeywordV33()",
+          "label": "Add keyword",
+          "sourceOffset": 59806
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "selectAllUserRequestsV33()",
+          "label": "Select all",
+          "sourceOffset": 61485
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 61749
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "viewRequestDocsV33('ahsan.dly')",
+          "label": "View documents",
+          "sourceOffset": 61942
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 62051
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "viewRequestDocsV33('sara.dly')",
+          "label": "View request",
+          "sourceOffset": 62251
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 63377
+        },
+        {
+          "tag": "textarea",
+          "id": "v33DecisionReason",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "${action==='approve'?'Your country change request has been approved.':'Your request could not be verified. Please submit clearer evidence.'}",
+          "sourceOffset": 63765
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 64039
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "finalizeUserRequestsV33('${action}')",
+          "label": "Confirm",
+          "sourceOffset": 64103
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Claim a guaranteed reward using this suspicious external link.",
+          "sourceOffset": 66987
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 67106
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 67206
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Campaign permanently blocked after verification of a misleading link.",
+          "sourceOffset": 67405
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 67651
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Marketer blocked and settlement policy applied')",
+          "label": "Confirm block",
+          "sourceOffset": 67715
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Category catalogue saved')",
+          "label": "Save catalogue",
+          "sourceOffset": 72246
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Geography catalogue updated')",
+          "label": "Add location",
+          "sourceOffset": 74872
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Maintenance window scheduled and notice queued')",
+          "label": "Schedule maintenance",
+          "sourceOffset": 78407
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Secondary preview URL opened')",
+          "label": "Open preview URL",
+          "sourceOffset": 78527
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "quotePremiumV34('abc.dly','0xA13...9F2')",
+          "label": "Create quote",
+          "sourceOffset": 79700
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "viewBrandDocsV34('noki.dly')",
+          "label": "View 3 files",
+          "sourceOffset": 79955
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "quotePremiumV34('noki.dly','0xB22...B02')",
+          "label": "Approve and quote",
+          "sourceOffset": 80050
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "rejectBrandV34('noki.dly')",
+          "label": "Reject",
+          "sourceOffset": 80154
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Our company authorizes this wallet to manage the official Daily name.",
+          "sourceOffset": 80635
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 81016
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 81197
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 81248
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "24 hours 48 hours 7 days",
+          "sourceOffset": 81307
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Your request has been approved. Accept this quote before it expires to register the name.",
+          "sourceOffset": 81441
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 81554
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Quote sent to applicant Daily Mail')",
+          "label": "Send quote",
+          "sourceOffset": 81618
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "The submitted evidence does not establish authority to claim this brand identity.",
+          "sourceOffset": 81845
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 81950
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Rejection reason sent by Daily Mail')",
+          "label": "Reject request",
+          "sourceOffset": 82014
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "2026 2027",
+          "sourceOffset": 86787
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "addGeoV35()",
+          "label": "Add location",
+          "sourceOffset": 91127
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "selectAllRequestsV35()",
+          "label": "Select all",
+          "sourceOffset": 92606
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 92866
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "viewRequestV35('ahsan.dly')",
+          "label": "View documents",
+          "sourceOffset": 93049
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "checkbox",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 93154
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "viewRequestV35('sara.dly')",
+          "label": "View request",
+          "sourceOffset": 93344
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 94273
+        },
+        {
+          "tag": "textarea",
+          "id": "v35DecisionReason",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "${type==='approve'?'Your country change request has been approved.':'The submitted request could not be verified.'}",
+          "sourceOffset": 94593
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 94812
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "finalDecisionV35('${type}')",
+          "label": "Confirm",
+          "sourceOffset": 94876
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "quoteV35('abc.dly')",
+          "label": "Create quote",
+          "sourceOffset": 95878
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "brandDocsV35()",
+          "label": "View 3 files",
+          "sourceOffset": 96104
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "quoteV35('noki.dly')",
+          "label": "Approve and quote",
+          "sourceOffset": 96185
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "rejectV35('noki.dly')",
+          "label": "Reject",
+          "sourceOffset": 96268
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 96883
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 97050
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 97101
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "24 hours 48 hours 7 days",
+          "sourceOffset": 97160
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Your request has been approved. Accept the quote before it expires.",
+          "sourceOffset": 97281
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 97372
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Quote sent to applicant mailbox')",
+          "label": "Send quote",
+          "sourceOffset": 97436
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "The submitted evidence does not establish authority for this brand identity.",
+          "sourceOffset": 97645
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Cancel",
+          "sourceOffset": 97745
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal();toast('Rejection sent to applicant mailbox')",
+          "label": "Reject",
+          "sourceOffset": 97809
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Maintenance scheduled and notice queued')",
+          "label": "Schedule maintenance",
+          "sourceOffset": 101000
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "toast('Secondary preview URL opened')",
+          "label": "Open preview URL",
+          "sourceOffset": 101113
+        },
+        {
+          "tag": "textarea",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "Claim a guaranteed reward using this external URL.",
+          "sourceOffset": 102700
+        },
+        {
+          "tag": "input",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "",
+          "label": "",
+          "sourceOffset": 102807
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "closeModal()",
+          "label": "Close",
+          "sourceOffset": 102896
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "type": "",
+          "dataView": "",
+          "dataPane": "",
+          "action": "addGeoV36()",
+          "label": "Add",
+          "sourceOffset": 109625
+        }
+      ]
+    }
+  }
+}

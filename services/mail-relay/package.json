@@ -1,0 +1,1 @@
+{ "name": "@daily/mail-relay", "private": true, "type": "module", "exports": "./src/index.ts", "scripts": { "build": "tsc", "test": "tsc && node --test test/*.test.mjs" }, "dependencies": { "@daily/sdk": "workspace:*", "zod": "^3.24.1" }, "devDependencies": { "@types/node": "^22.10.2", "typescript": "^5.7.3" } }

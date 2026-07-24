@@ -1,0 +1,10 @@
+.env
+.git
+.agents
+.codex
+node_modules
+**/node_modules
+**/dist
+**/build
+tmp
+*.log

@@ -1,0 +1,9 @@
+[project]
+name = "daily-identity-sdk"
+version = "0.1.0"
+description = "Daily Identity protocol utilities for Python clients"
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

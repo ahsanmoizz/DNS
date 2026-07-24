@@ -1,0 +1,85 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-daily_identity}
+      POSTGRES_USER: ${POSTGRES_USER:-daily}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in the remote environment}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes: [daily-postgres:/var/lib/postgresql/data]
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD:?set REDIS_PASSWORD in the remote environment}"]
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli --no-auth-warning -a $$REDIS_PASSWORD ping | grep PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    volumes: [daily-redis:/data]
+
+  migrate:
+    build: { context: ., dockerfile: services/api/Dockerfile }
+    restart: "no"
+    command: ["pnpm", "--filter", "@daily/api", "migrate"]
+    environment: &service-env
+      DATABASE_URL: postgresql://${POSTGRES_USER:-daily}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-daily_identity}
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in the remote environment}
+      SEPOLIA_TESTNET_RPC_URL: ${SEPOLIA_TESTNET_RPC_URL:?set SEPOLIA_TESTNET_RPC_URL}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:?set GOOGLE_CLIENT_ID}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:?set GOOGLE_CLIENT_SECRET}
+      GOOGLE_REDIRECT_URI: ${GOOGLE_REDIRECT_URI:?set GOOGLE_REDIRECT_URI}
+      USER_APP_URL: ${USER_APP_URL:?set USER_APP_URL}
+      ADMIN_APP_URL: ${ADMIN_APP_URL:?set ADMIN_APP_URL}
+      AUTHENTICATED_PREVIEW_APP_URL: ${AUTHENTICATED_PREVIEW_APP_URL:?set AUTHENTICATED_PREVIEW_APP_URL}
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  api:
+    build: { context: ., dockerfile: services/api/Dockerfile }
+    restart: unless-stopped
+    environment:
+      <<: *service-env
+      PORT: 3000
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+    ports: ["3000:3000"]
+
+  indexer:
+    build: { context: ., dockerfile: services/indexer/Dockerfile }
+    restart: on-failure
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-daily}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-daily_identity}
+      SEPOLIA_TESTNET_RPC_URL: ${SEPOLIA_TESTNET_RPC_URL:?set SEPOLIA_TESTNET_RPC_URL}
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+
+  user-web:
+    build:
+      context: .
+      dockerfile: apps/user-web/Dockerfile
+      args:
+        API_URL: ${API_URL:?set the public Daily API URL in the remote environment}
+    restart: unless-stopped
+    ports: ["8080:8080"]
+
+  admin-web:
+    build:
+      context: .
+      dockerfile: apps/admin-web/Dockerfile
+      args:
+        API_URL: ${API_URL:?set the public Daily API URL in the remote environment}
+    restart: unless-stopped
+    ports: ["8081:8080"]
+
+volumes:
+  daily-postgres:
+  daily-redis:

@@ -1,0 +1,4 @@
+import { resolve } from "node:path";
+import { defineConfig, loadEnv } from "vite";
+const workspace = resolve(__dirname, "../..");
+export default defineConfig(({ mode }) => { const env = loadEnv(mode, workspace, ""); return { root: workspace, define: { __DAILY_API_URL__: JSON.stringify(env.API_URL || "") }, plugins: [{ name: "daily-live-admin-adapter", transformIndexHtml: { order: "pre", handler(html, context) { return context.path.endsWith("Daily_Admin_Simulator_V3_6.html") ? html.replace("</body>", "<script type=\"module\" src=\"/apps/admin-web/src/live-adapter.ts\"></script></body>") : html; } } }], build: { outDir: resolve(__dirname, "dist"), emptyOutDir: true, rollupOptions: { input: resolve(workspace, "Daily_Admin_Simulator_V3_6.html") } }, server: { port: Number(env.ADMIN_APP_PORT || 5174), strictPort: true } }; });
