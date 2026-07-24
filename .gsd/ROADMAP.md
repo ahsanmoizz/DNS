@@ -153,7 +153,7 @@
 ---
 
 ### Phase 6: SDK, Payments & Cross-Cutting Features (DLY-035 → DLY-038, DLY-113 → DLY-118)
-**Status**: ⬜ Not Started
+**Status**: ✅ Complete
 **Objective**: Complete remaining SDK features, payment flows, wallet settings, and optional/future-ready capabilities.
 
 **Deliverables:**
