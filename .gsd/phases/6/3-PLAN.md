@@ -51,3 +51,4 @@ Prepare multisig integration, timelocks, and ERC-165 verification.
 ## Success Criteria
 - [ ] The resolver implements ERC-165 checking efficiently.
 - [ ] CCIP-Read fallback paths are defined.
+- [ ] Multisig governance readiness documentation is correctly drafted for transition to a Timelock.

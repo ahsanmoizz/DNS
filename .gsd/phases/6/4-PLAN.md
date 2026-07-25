@@ -34,13 +34,14 @@ Finalize the TypeScript SDK, create the Python SDK stub, and write migration and
   <files>
     - python-sdk/stub.py
     - scripts/migrate.ts
+    - docs/migration.md
   </files>
   <action>
     - Create a placeholder stub for a future Python SDK equivalent (DLY-115).
-    - Create documentation for smart contract upgrades and migration paths (DLY-116).
+    - Create documentation for smart contract upgrades and migration paths (DLY-116), writing out `docs/migration.md`.
   </action>
   <verify>Manual inspection</verify>
-  <done>Future readiness goals are met.</done>
+  <done>Future readiness goals and migration documentation are met.</done>
 </task>
 
 <task type="auto">
@@ -52,9 +53,10 @@ Finalize the TypeScript SDK, create the Python SDK stub, and write migration and
     - Create scaffolding deployment scripts for transitioning from Sepolia testnet to Ethereum Mainnet (DLY-118).
   </action>
   <verify>Manual check</verify>
-  <done>Redeployment processes are documented.</done>
+  <done>Redeployment executable scripts are usable and safe.</done>
 </task>
 
 ## Success Criteria
 - [ ] TypeScript SDK is final and complete.
 - [ ] Operational scripts and stubs for expansion exist.
+- [ ] Migration and redeployment documentation/executables are confirmed complete and usable.

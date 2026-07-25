@@ -11,39 +11,39 @@ Implement ERC-3668 gateway configurations, operational system monitoring, event 
 
 ## Context
 - .gsd/SPEC.md
-- d:\Daily_DNS\apps\admin-web\src\live-adapter.ts
+- apps/admin-web/src/live-adapter.ts
 
 ## Tasks
 
 <task type="auto">
   <name>Implement ERC-3668 Gateway Settings</name>
-  <files>d:\Daily_DNS\apps\admin-web\src\live-adapter.ts</files>
+  <files>apps/admin-web/src/live-adapter.ts</files>
   <action>
     - Implement `dailyLiveSaveGateway` for the gateway signer address.
     - Implement `dailyLiveAddGatewayUrl` and `dailyLiveRemoveGatewayUrl`.
   </action>
-  <verify>pnpm build</verify>
+  <verify>Ensure gateway configurations handle redundancy patterns properly</verify>
   <done>Gateway resolution URLs and signatures are managed effectively on-chain.</done>
 </task>
 
 <task type="auto">
   <name>Implement System Monitoring & Health</name>
-  <files>d:\Daily_DNS\apps\admin-web\src\live-adapter.ts</files>
+  <files>apps/admin-web/src/live-adapter.ts</files>
   <action>
     - Hook into `/v1/admin/monitoring` to fetch indexer checkpoint status, RPC latency, mail relay status, and storage health.
     - Connect `dailyLiveSearchEvents` to query `/v1/admin/events`.
   </action>
-  <verify>pnpm build</verify>
+  <verify>Ensure monitoring and event search successfully read state</verify>
   <done>System metrics, blockchain indexer status, and logs are visually represented on the admin monitoring pane.</done>
 </task>
 
 <task type="auto">
   <name>Implement Operational CSV Export</name>
-  <files>d:\Daily_DNS\apps\admin-web\src\live-adapter.ts</files>
+  <files>apps/admin-web/src/live-adapter.ts</files>
   <action>
     - Implement `dailyLiveDownloadOperationalCsv` to fetch `/v1/admin/reports/operational.csv` and trigger a blob download.
   </action>
-  <verify>pnpm build</verify>
+  <verify>Ensure operational reporting downloads respect privacy checks</verify>
   <done>Privacy-safe operational reporting downloads successfully.</done>
 </task>
 

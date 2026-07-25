@@ -6,7 +6,7 @@ echo "=== Daily Identity Production Setup ==="
 # 1. Load environment variables
 if [ -f .env ]; then
   echo "Loading .env file..."
-  export $(grep -v '^#' .env | xargs)
+  set -a; source .env; set +a
 else
   echo "Error: .env file not found."
   exit 1
@@ -18,6 +18,7 @@ echo "Ensuring database exists on offset port 5480..."
 psql -p 5480 -U postgres -tc "SELECT 1 FROM pg_database WHERE datname = 'daily_identity'" | grep -q 1 || psql -p 5480 -U postgres -c "CREATE DATABASE daily_identity"
 psql -p 5480 -U postgres -tc "SELECT 1 FROM pg_roles WHERE rolname = 'daily'" | grep -q 1 || psql -p 5480 -U postgres -c "CREATE USER daily WITH ENCRYPTED PASSWORD 'daily'"
 psql -p 5480 -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE daily_identity TO daily"
+psql -p 5480 -U postgres -d daily_identity -c "GRANT CREATE ON SCHEMA public TO daily"
 
 # 3. Nginx Configuration
 echo "Configuring Nginx..."
@@ -44,7 +45,7 @@ pnpm --filter @daily/api tsx src/migrate.ts
 
 # 6. PM2 Process Manager
 echo "Starting PM2 processes..."
-pm2 start ecosystem.config.cjs
+pm2 startOrReload ecosystem.config.cjs
 pm2 save
 
 echo "=== Setup Complete ==="

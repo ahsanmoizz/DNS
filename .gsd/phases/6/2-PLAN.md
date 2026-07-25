@@ -49,3 +49,5 @@ Finalize wallet-gated settings, identity-link EIP-712 proofs, and moderation enf
 ## Success Criteria
 - [ ] Linked identities sync seamlessly and share moderation status.
 - [ ] EIP-712 proofs are correctly structured for linkage.
+- [ ] Cross-Linked Moderation Enforcement works across all connected addresses.
+- [ ] Wallet-Gated Settings enforce strict re-authentication loops.

@@ -13,16 +13,15 @@
 **Date:** 2026-07-24
 **Status:** Accepted
 **Context:** User explicitly prohibits Docker on the development machine and requires direct server installation.
-**Decision:** Build locally with pnpm, deploy via scp, run a single setup.sh script on the server that installs PostgreSQL, Redis, runs migrations, and starts services.
-**Consequence:** Docker Compose files are retained as reference only. PM2 or systemd manages processes on the server.
+**Decision:** Build locally with pnpm, deploy via scp, run a single setup.sh script on the server that connects to existing PostgreSQL and Redis prerequisites, runs migrations, and starts services.
+**Consequence:** Docker Compose files are retained as reference only. PM2 manages backend processes on the server, while Nginx handles the static frontends.
 
 ## ADR-003: Server Port Isolation
 **Date:** 2026-07-24
 **Status:** Accepted
 **Context:** The server runs other services. The application must not interfere.
-**Decision:** All ports (PostgreSQL, Redis, API, frontends, Nginx) are configured exclusively through .env. PostgreSQL runs on a non-default, non-conflicting port.
+**Decision:** All infrastructure credentials and ports (PostgreSQL, Redis, API, frontends) are read explicitly and dynamically from `.env`. The setup script strictly loads these values securely before executing any provisioning logic.
 **Consequence:** Every service binding reads its port from environment variables. No hardcoded ports in any source file.
-
 ---
 
 ## Phase 1 Decisions
@@ -39,8 +38,8 @@
 ### ADR-005: PM2 Process Manager
 **Status:** Accepted
 **Context:** PM2 is already installed globally on the server and manages other applications.
-**Decision:** Use PM2 with an `ecosystem.config.cjs` file to manage all Daily Identity processes (API, indexer, user-web static serve, admin-web static serve).
-**Consequence:** `setup.sh` runs `pm2 start ecosystem.config.cjs` and `pm2 save`. No systemd units needed. PM2 already has startup hooks configured on the server.
+**Decision:** Use PM2 with an `ecosystem.config.cjs` file to manage all Daily Identity backend processes (API, indexer, mail relay). The static frontends (user-web, admin-web) are explicitly owned and served by Nginx.
+**Consequence:** `setup.sh` runs `pm2 startOrReload ecosystem.config.cjs` and `pm2 save`. PM2 already has startup hooks configured on the server.
 
 ### ADR-006: Persistent Cloudflare Tunnels
 **Status:** Accepted

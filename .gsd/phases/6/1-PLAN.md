@@ -53,3 +53,4 @@ Implement domain-to-domain native DLY transfers with masked resolution, transact
 ## Success Criteria
 - [ ] Network fee estimation works correctly.
 - [ ] Wallet domains resolve to transfer targets natively.
+- [ ] Activity Ledger correctly tracks transaction history.
